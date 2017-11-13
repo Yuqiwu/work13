@@ -13,7 +13,7 @@ def result():
     u = urllib2.urlopen("http://www.freegeoip.net/json/%s" % website)
     data_string = u.read()
     d = json.loads(data_string)
-    return render_template("result.html", ip = d["ip"], country_code = d["country_code"], country_name = d["country_name"], region_code = d["region_code"], city = d["city"], zip_code = d["zip_code"], time_zone = d["time_zone"], latitude = d["latitude"], longitude = d["longitude"], metro_code = d["metro_code"])
+    return render_template("result.html", website =website, ip = d["ip"], country_code = d["country_code"], country_name = d["country_name"], region_code = d["region_code"], city = d["city"], zip_code = d["zip_code"], time_zone = d["time_zone"], latitude = d["latitude"], longitude = d["longitude"], metro_code = d["metro_code"])
 
 if __name__ == "__main__":
     my_app.debug = True
