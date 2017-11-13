@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+  <title> Result </title>
+  <center>
+  <body>
+    <br>
+    <br>
+    <p> IP: {{ip}} </p>
+    <br>
+    <p> Country Code: {{country_code}} </p>
+    <br>
+    <p> Country Name: {{country_name}} </p>
+    <br>
+    <p> Region Code: {{region_code}} </p>
+    <br>
+    <p> City: {{city}} </p>
+    <br>
+    <p> Zip Code: {{zip_code}} </p>
+    <br>
+    <p> Time Zone: {{time_zone}} </p>
+    <br>
+    <p> Latitude: {{latitude}} </p>
+    <br>
+    <p> Longitude: {{longitude}} </p>
+    <br>
+    <p> Metro Code: {{metro_code}} </p>
+    <br>
+    <br>
+    <form method="POST", action="/result">
+      Do you want to try another website?
+      <br>
+      Website:
+      <input type="text" name="website">
+      <br>
+      <input type="submit" value="Submit">
+    </form> 
+  </body>
+  </center>
+</html>
